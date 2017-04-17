@@ -4,5 +4,16 @@ class Job < ApplicationRecord
   validates :wage_upper_bound, :wage_lower_bound, presence: true
   validates :wage_lower_bound, numericality: { greater_than: 3000}
 
-  scope :recent, -> { order("created_at DESC")} 
+  scope :recent, -> { order("created_at DESC")}
+
+  def publish!
+   self.is_hidden = false
+   self.save
+ end
+
+ def hide!
+   self.is_hidden = true
+   self.save
+ end
+
 end
