@@ -25,6 +25,7 @@
             <td>薪资下限</td>
             <td>薪资上限</td>
             <td>刊登时间</td>
+            <td>发布者</td>
         </tr>
 
     </thead>
@@ -42,6 +43,9 @@
             </td>
             <td>
                 <%= job.created_at %>
+            </td>
+            <td>
+                <%= job.user.email %>
             </td>
         </tr>
         <% end %>
