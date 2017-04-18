@@ -15,6 +15,11 @@ end
 
 def show
   @job = Job.find(params[:id])
+
+  if @job.is_hidden
+    flash[:warning] = "该工作已被隐藏"
+    redirect_to root_path
+  end
 end
 
 def new
