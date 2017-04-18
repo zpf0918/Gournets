@@ -55,21 +55,6 @@
      border-bottom-left-radius: 3px;//左下角圆边
   }
 
-
-.slogan {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  text-align: center;
-  color: white;
-  top: 12px;
-}
-
-.lead {
-  margin-bottom: 60px;
-  text-align: center;
-  color: white;
-}
-
 .caption {
   margin: 30px;
   text-align: center;
@@ -158,9 +143,9 @@
 
 .navbar-brand > img {
    display: inline-block; //图片和链接文字显示在同一行
-   margin-right: 10px; //图片和链接文字拉开一点距离
-   width: 32px; //定制图片宽度
-   height: 32px; //定制图片高度
+   margin-right: 15px; //图片和链接文字拉开一点距离
+   width: 40px; //定制图片宽度
+   height: 40px; //定制图片高度
 }
 
 .container-fluid .jumbotron{
@@ -288,4 +273,19 @@
 
 .login-help{
   font-size: 12px;
+}
+
+/* footer */
+footer {
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: #EEEEEE;
+    text-align: center;
+    color: #7e7e7e;
+    margin-top: 0px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 30px;
+    z-index: 1000
+
 }
