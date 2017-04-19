@@ -285,11 +285,6 @@
 
 
 /* footer */
-body {
-  position: relative;
-  margin-bottom: -100px; /* 一定要和footer的高度一致 */
-  min-height: 100%;
-}
 
 footer {
     font-family: Verdana, Geneva, sans-serif;
@@ -297,13 +292,14 @@ footer {
     text-align: center;
     color: #7e7e7e;
     margin-top: 0px;
+    margin-left: -15px;
+    margin-right: 0px;
     position: relative;
     bottom: 0;
     width: 100%;
     padding-bottom: 30px;
     z-index: 1000;  /* 确保页面滑动的时候，字体不会从上面滑下去 */
 }
-
 
 .container {
   text-align: center;
