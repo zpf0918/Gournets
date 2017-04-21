@@ -39,7 +39,7 @@
 
 .navbar-brand{
    color: #ffffff;
-   font-weight: 700px;  
+   font-weight: 700px;
 }
 
 .navbar button{
@@ -111,8 +111,11 @@ header{
 }
 
 .banner{
-  background:#B5C3D5;
-  height:280px;
+  background-image:url('http://ww3.sinaimg.cn/large/006tNbRwgy1feu6egw3osj31hc0wvh1c.jpg');
+  height:480px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .banner>h2,
@@ -128,7 +131,7 @@ header{
 
 .banner>h2{
   font-size:2.5em;
-  color:#25271E;
+  color:#ffffff;
 }
 
 .banner .info{
@@ -160,14 +163,14 @@ header{
 
 .clients .clients-info{
   padding:7px;
-  box-shadow:1px 1px 3px gray, -1px -1px 3px gray;;
+  box-shadow:1px 1px 3px #ffffff, -1px -1px 3px #ffffff;;
   margin-bottom:20px;
   width:0;
   height:0;
   line-height:0;
   opacity:0;
   margin:15px auto 10px;
-  background:#ededed;
+  background:#673AB7;
 }
 
 .clients .clients-info h3{
