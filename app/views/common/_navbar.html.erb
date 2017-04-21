@@ -1,47 +1,54 @@
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-             <a class="navbar-brand" href="/"> 联盟web </a>
-        </div>
+<header>
+	<div class="navbar" role="navigation">
+		<div class="container">
+    	<div class="navbar-header">
+      	<a class="navbar-brand" href="/">Gourmets</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+        	<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li>
-                <div class="form-group form-inline search-bar">
-                    <%= render :partial => "jobs/search_bar" %>
-                </div>
-            </li>
-          </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
 
-                  <% if !current_user %>
-                    <li><a href="#" data-toggle="modal" data-target="#signup-modal">注册</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#login-modal">登入</a></li>
-                  <% else %>
-                    <li class="dropdown">
-                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                          欢迎你！, <%= current_user.email %>
-                       <b class="caret"></b>
-                       </a>
-                   <ul class="dropdown-menu">
-                     <% if current_user.admin? %>
-                     <li> <%= link_to("管理员入口", admin_jobs_path)%></li>
-                     <% end %>
-                     <li> <%= link_to("我投递的工作", account_jobs_path)%></li>
-                     <li> <%= link_to("登出", destroy_user_session_path, method: :delete) %> </li>
-                  </ul>
-                  </li>
-                  <% end %>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
+
+
+
+      <div class="collapse navbar-collapse" id="mynav">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+              <% if !current_user %>
+                <li><a href="#" data-toggle="modal" data-target="#signup-modal">注册</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#login-modal">登入</a></li>
+              <% else %>
+              <li class="dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      Hello！, <%= current_user.email %>
+                   <b class="caret"></b>
+                   </a>
+               <ul class="dropdown-menu">
+                 <% if current_user.admin? %>
+                 <li> <%= link_to("管理员入口", admin_jobs_path)%></li>
+                 <% end %>
+                 <li> <%= link_to("我投递的工作", account_jobs_path)%></li>
+                 <li> <%= link_to("登出", destroy_user_session_path, method: :delete) %> </li>
+              </ul>
+             </li>
+            <% end %>
+          </li>
+        </ul>
+      	<ul class="nav navbar-nav navbar-left">
+        	<li><a href="#about">About</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+        </ul>
+      </div>
+     </div>
+	</div>
+ </header>
 
 <!-- 以下代码添加在最后 -->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
