@@ -1,7 +1,97 @@
-<div class="banner">
-  <h2>We help you achieve your goals</h2>
-  
+<!--滑动效果必要条件，在本文件有javascript设置-->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+
+
+<!-- 首页动图演示-->
+<div class="row">
+ <div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+
+   <!-- Indicators -->
+   <ol class="carousel-indicators">
+       <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+       <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+       <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+   </ol>
+
+   <!-- Wrapper For Slides -->
+    <div class="carousel-inner" role="listbox">
+
+       <!-- Third Slide -->
+       <div class="item active">
+
+           <!-- Slide Background -->
+           <img src="http://ww3.sinaimg.cn/large/006tNbRwgy1feu6egw3osj31hc0wvh1c.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+           <div class="bs-slider-overlay"></div>
+
+           <div class="container">
+               <div class="row">
+                   <!-- Slide Text Layer -->
+                   <div class="slide-text slide_style_left">
+                       <h1 data-animation="animated zoomInRight">Bootstrap Carousel</h1>
+                       <p data-animation="animated fadeInLeft">Bootstrap carousel now touch enable slide.</p>
+                       <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!-- End of Slide -->
+
+       <!-- Second Slide -->
+       <div class="item">
+
+           <!-- Slide Background -->
+           <img src="http://ww4.sinaimg.cn/large/006tNbRwly1feufusd52gj31hc0zbaoh.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+           <div class="bs-slider-overlay"></div>
+           <!-- Slide Text Layer -->
+           <div class="slide-text slide_style_center">
+               <h1 data-animation="animated flipInX">不辜负美食</h1>
+               <p data-animation="animated lightSpeedIn">美食</p>
+               <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">select one</a>
+
+           </div>
+       </div>
+       <!-- End of Slide -->
+
+       <!-- Third Slide -->
+       <div class="item">
+
+           <!-- Slide Background -->
+           <img src="http://ww2.sinaimg.cn/large/006tNbRwgy1feu5s1edtcj31hc0zk7gd.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+           <div class="bs-slider-overlay"></div>
+           <!-- Slide Text Layer -->
+           <div class="slide-text slide_style_right">
+               <h1 data-animation="animated zoomInLeft">Beautiful Animations</h1>
+               <p data-animation="animated fadeInRight">Lots of css3 Animations to make slide beautiful .</p>
+               <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">learn more</a>
+           </div>
+       </div>
+       <!-- End of Slide -->
+
+
+   </div><!-- End of Wrapper For Slides -->
+
+   <!-- Left Control -->
+   <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+       <span class="fa fa-angle-left" aria-hidden="true"></span>
+       <span class="sr-only">Previous</span>
+   </a>
+
+   <!-- Right Control -->
+   <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+       <span class="fa fa-angle-right" aria-hidden="true"></span>
+       <span class="sr-only">Next</span>
+   </a>
+
+ </div>
 </div>
+<!-- End  bootstrap-touch-slider Slider -->
+
+
+
+
+
+
 <section class="about" id="about">
  <div class="container">
    <div class="row">
@@ -12,7 +102,7 @@
    <div class="row">
      <div class="col-xs-12 col-sm-4">
        <h4>Our history</h4>
-       <%= image_tag("feature.png") %><br/><br/>
+       <%= image_tag("feature.jpg") %><br/><br/>
               <p class="index-contect">
                 联盟web2017创立，是一家新兴的互联网公司，专注于求职招聘领域。<br />
               </p>
@@ -36,37 +126,8 @@
  </div>
 </section> <!-- end of about section-->
 <hr>
-<section class="clients" id="clients">
-  <div class="container">
-   <div class="row">
-     <div class="col-xs-12">
-       <h2>Our Clients</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-       <div class="clients-info">
-         <h3>hello</h3>
-       </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-       <div class="clients-info">
-         <h3>Client2</h3>
-       </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-       <div class="clients-info">
-         <h3>Client3</h3>
-       </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-       <div class="clients-info">
-         <h3>Client4</h3>
-       </div>
-      </div>
-    </div>
-  </div>
-</section> <!-- end of clients section-->
+
+<!-- pro -->
 
 <section class="process" id="process">
  <div class="container">
@@ -81,7 +142,7 @@
          <h3>Analyze</h3>
          <hr>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <h4>1</h4>
+        <h4>酒类</h4>
        </div>
      </div>
      <div class="col-xs-12 col-sm-6 col-md-3">

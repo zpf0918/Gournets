@@ -157,32 +157,16 @@ header{
   background:#8FC6FF;
 }
 
-/*------------------------------------------------------------------
-                        SECTION.CLIENTS STYLES
--------------------------------------------------------------------*/
 
-.clients .clients-info{
-  padding:7px;
-  box-shadow:1px 1px 3px #ffffff, -1px -1px 3px #ffffff;;
-  margin-bottom:20px;
-  width:0;
-  height:0;
-  line-height:0;
-  opacity:0;
-  margin:15px auto 10px;
-  background:#673AB7;
-}
-
-.clients .clients-info h3{
-  margin:0;
-  line-height:180px;
-}
 
 /*------------------------------------------------------------------
                         SECTION.PROCESS STYLES
 -------------------------------------------------------------------*/
+.process{
+  background: #ffffff;
+}
 .process .method{
-  background:#ccc;
+  background:#ffffff;
   text-align:center;
   padding:10px;
   margin-bottom:30px;
@@ -316,10 +300,7 @@ header{
   .clients .col-xs-12{
     	width:50%;
   }
-  .clients .col-xs-12:nth-child(3),
-  .clients .col-xs-12:nth-child(4){
-    margin-top:15px;
-  }
+
 }
 
 
