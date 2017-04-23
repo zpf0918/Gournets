@@ -1,3 +1,4 @@
+<div id="admin-index">
 <div class="pull-right">
   <%= link_to("新增职位", new_admin_job_path, :class => "btn btn-xs btn-success" ) %>
 </div>
@@ -41,6 +42,7 @@
         <td> <%= job.wage_lower_bound %> </td>
         <td> <%= job.wage_upper_bound %> </td>
         <td>
+
            <%= link_to("编辑", edit_admin_job_path(job), :class => "btn btn-xs btn-info") %>
            <%= link_to("删除", admin_job_path(job), :method => :delete, :class => "btn btn-xs btn-danger", :data => { :confirm => "Are you sure?" }) %>
 
@@ -49,6 +51,7 @@
            <% else %>
              <%= link_to("隐藏", hide_admin_job_path(job), :method => :post,  :class => "btn btn-xs btn-warning") %>
            <% end %>
+
         </td>
         <td>
             <%= job.created_at %>
@@ -59,4 +62,5 @@
 
 <div class="text-center">
   <%= will_paginate @jobs %>
+</div>
 </div>
