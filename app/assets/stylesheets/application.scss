@@ -358,3 +358,11 @@ section {
 #admin-index{
   margin-bottom: 245px;
 }
+
+.jobs-show{
+  background: #fff;
+}
+
+html { height: 100%;}
+  body { min-height: 100%; display: flex; flex-direction: column;}
+  .content { flex: 1;}
