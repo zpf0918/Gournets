@@ -7,9 +7,10 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
+    <%= f.input :is_admin, :label => false,  as: :radio_buttons, collection:  [['General User', false], ['Enterprise User', true]], required: true %>
     <%= f.input :email, :label => false, placeholder:'your email adress',required: true, autofocus: true %>
     <%= f.input :name, :label => false, placeholder: 'your name', required: true %>
-    <%= f.input :is_admin, :label => false,  as: :radio_buttons, collection:  [['General User', false], ['Enterprise User', true]], required: true %>
+
     <%= f.input :password, :label => false, placeholder: 'Enter the password for 6 to 12', required: true %>
     <%= f.input :password_confirmation, :label => false, placeholder: 'confirm your password', required: true %>
   </div>

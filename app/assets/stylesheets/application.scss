@@ -153,7 +153,7 @@ stylize any heading tags withing white-panel below
   color: #A92733;
 }
 .white-panel:hover {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 5);
   margin-top: -5px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -192,8 +192,13 @@ stylize any heading tags withing white-panel below
     position: relative;
     display: table;
     border-collapse: separate;
-    width: 250px; //加上width
+
+    width: 150px; //加上width
 }
+.btn.btn-default{
+  background: #fff;
+}
+
 /*----------------------------end ------------------------*/
 
 
@@ -260,6 +265,9 @@ section {
 .base-sec p {
 	font-size: 16px;
 }
+.base-sec h2{
+  color: #fff;
+}
 /*-----------------------------end---------------------------------------*/
 
 
@@ -274,7 +282,7 @@ section {
 .about{
   margin-top:0px;
   margin-bottom: 0px;
-  background-color: rgba(103,58,183,0.8);
+  background-color: rgba(103,58,183,0.7);
 }
 .about h2{
   color: #fff;
