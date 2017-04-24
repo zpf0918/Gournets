@@ -57,6 +57,19 @@
 /*------------------------------------------------------------------
                         DEFAULT STYLES
 -------------------------------------------------------------------*/
+html {
+  height: 100%;
+}
+
+body { min-height: 100%;
+  display: flex;
+  flex-direction: column;
+ }
+
+.content {
+  flex: 1;
+}
+
 body{
   font-family: 'Lato', sans-serif;
   background:#fff;
@@ -123,8 +136,6 @@ header{
 /*------------------------------------------------------------------
                         section process
 -------------------------------------------------------------------*/
-
-
 
 #pinBoot {
   position: relative;
@@ -230,7 +241,7 @@ section {
 
 
 
-/* base SECTION
+/* base section
 -------------------------------------------------- */
 .base-sec {
 	background: url('http://ww3.sinaimg.cn/large/006tNbRwgy1fev6acoih7j31hc0xqwu3.jpg') no-repeat center center;
@@ -362,7 +373,3 @@ section {
 .jobs-show{
   background: #fff;
 }
-
-html { height: 100%;}
-  body { min-height: 100%; display: flex; flex-direction: column;}
-  .content { flex: 1;}

@@ -21,7 +21,7 @@
 
 
 
-/*-------------------------------------- process------------------------------------------*/
+/*-------------------------------------- prectice------------------------------------------*/
 $(document).ready(function() {
 $('#pinBoot').pinterest_grid({
 no_columns: 4,
@@ -197,4 +197,4 @@ http://www.jqueryscript.net/layout/Simple-jQuery-Plugin-To-Create-Pinterest-Styl
 
 })(jQuery, window, document);
 
-/* process end */
+/* prectice end */
