@@ -3,7 +3,8 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
 before_action :require_is_admin
 layout "admin"
 def index
- @jobs = Job.all.recent.paginate(:page => params[:page], :per_page => 5)
+ @jobs = current_user.jobs.recent.paginate(:page => params[:page], :per_page => 5)
+
 end
 
 def show
@@ -17,6 +18,7 @@ end
 def create
   @job = Job.new(job_params)
   @job.user = current_user
+
   if @job.save
     redirect_to admin_jobs_path
   else
@@ -38,7 +40,7 @@ def update
 end
 
 def destroy
-  @job = Job.find(parmas[:id])
+  @job = Job.find(params[:id])
   @job.destroy
   redirect_to admin_jobs_path
 end
