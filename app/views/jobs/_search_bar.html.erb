@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-sm-9 col-lg-8 col-lg-offset-2">
     <%= form_tag search_jobs_path , :method => :get, :class => "jobs-search-form" do %>
-      <!-- <div class="input-group">
+      <div class="input-group">
         <input type="text" class="form-control search-bar-input"
          name="q" value="<%= params[:q] %>"   placeholder="Search...">
         <span class="input-group-btn">
@@ -9,12 +9,7 @@
             <span class="glyphicon glyphicon-search"></span>
           </button>
         </span>
-      </div> -->
-      <div class="cntr-innr">
-    	  <label class="search" for="inpt_search">
-    			<input id="inpt_search" type="text" name="q" value="<%= params[:q] %>"  />
-    		</label>
-    	</div>
+      </div>
     <% end %>
   </div>
 </div>
