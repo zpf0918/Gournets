@@ -190,3 +190,12 @@ http://www.jqueryscript.net/layout/Simple-jQuery-Plugin-To-Create-Pinterest-Styl
 })(jQuery, window, document);
 
 /* prectice end */
+
+$("#inpt_search").on('focus', function () {
+	$(this).parent('label').addClass('active');
+});
+
+$("#inpt_search").on('blur', function () {
+	if($(this).val().length == 0)
+		$(this).parent('label').removeClass('active');
+});
