@@ -1,0 +1,26 @@
+<div class="col-md-12">
+
+  <h2 class="text-center"> My favorite </h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th> # </th>
+        <th> 职位名称 </th>
+        <th> 职位描述 </th>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @jobs.each do |job| %>
+        <tr>
+          <td> # </td>
+          <td> <%= link_to(job.title, job_path(job)) %> </td>
+          <td> <%= job.description %> </td>
+
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

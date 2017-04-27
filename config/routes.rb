@@ -24,4 +24,10 @@ Rails.application.routes.draw do
    resources :jobs
  end
 
+ resources :jobs do
+    put :favorite, on: :member
+  end
+  resources :favorites do
+  end
+
 end

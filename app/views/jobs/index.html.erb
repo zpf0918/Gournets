@@ -56,6 +56,13 @@
                              method: :get) %>
              <% end %>
             </td>
+            <td>
+              <% if current_user && current_user.is_favorite_of?(job) %>
+                 <%= link_to('取消收藏'.html_safe, favorite_job_path(job, type: "unfavorite"), method: :put) %>
+              <% else %>
+                  <%= link_to('添加收藏'.html_safe, favorite_job_path(job, type: "favorite"), method: :put) %>
+              <% end %>
+            </td>
         </tr>
         <% end %>
     </tbody>

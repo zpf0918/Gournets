@@ -6,7 +6,7 @@
       </div>
       <div class="collapse navbar-collapse" >
 				<ul class="nav navbar-nav">
-			
+
 					<li>
 						<div class="form-group form-inline search-bar">
 							 <%= render :partial => "jobs/search_bar"%>
@@ -29,6 +29,7 @@
                  <li> <%= link_to("admin", admin_jobs_path)%></li>
                  <% end %>
                  <li> <%= link_to("My jobs", account_jobs_path)%></li>
+								 <li> <%= link_to(' 已收藏的工作'.html_safe, favorites_path) %> </li>
                  <li> <%= link_to("log out", destroy_user_session_path, method: :delete) %> </li>
               </ul>
              </li>
