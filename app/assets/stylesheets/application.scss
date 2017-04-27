@@ -29,6 +29,14 @@
   outline:none;
 }
 
+.dropdown-menu{
+  background-color: #9b59b6;
+  }
+
+.dropdown > li > a:hover{
+  background: #9b59b6;
+}
+
 .nav > li > a{
   color: #ffffff;
 
@@ -40,7 +48,7 @@
 .navbar-brand{
    color: #ffffff;
    font-weight: 700px;
-   
+
 }
 
 .navbar button{
