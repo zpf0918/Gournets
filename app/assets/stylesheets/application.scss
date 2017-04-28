@@ -28,10 +28,14 @@
   background-color:#9b59b6; /* 点击文字时的底色*/
   outline:none;
 }
-
 .dropdown-menu{
-  background-color: #9b59b6;
-  }
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+    min-height: 70px;
+    background-color: #9b59b6;
+}
+
 
 .dropdown > li > a:hover{
   background: #9b59b6;
