@@ -28,7 +28,6 @@ def is_favorite_of?(job)
   favorite_jobs.include?(job)
 end
 
-def favorited!(job)
-  favorite_jobs << job
-end
+
+
 end
