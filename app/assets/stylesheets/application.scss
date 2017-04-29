@@ -37,21 +37,28 @@
     background-color: #9b59b6;
 }
 
-.dropdown-menu > li{
- font-color: #ffffff;
+
+.dropdown-toggle{
+  color: #9b59b6;
 }
-
-
 
 .dropdown > li > a:hover{
   background: #9b59b6;
 
 }
 
+
 .nav > li > a{
-  color: #fff ;
+ color: #fff ;
 
 }
+
+.nav1 > li > a{
+  color:  #eee;
+  background: #ffffff;
+
+}
+
 .navbar{
   margin-bottom:0;
 }
