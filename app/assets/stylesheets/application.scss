@@ -24,6 +24,7 @@
 /*------------------------------------------------------------------
                         BOOTSTRAP STYLES
 -------------------------------------------------------------------*/
+
 .nav > li > a:hover, .nav > li > a:focus{
   background-color:#9b59b6; /* 点击文字时的底色*/
   outline:none;
@@ -36,13 +37,19 @@
     background-color: #9b59b6;
 }
 
+.dropdown-menu > li{
+ font-color: #ffffff;
+}
+
+
 
 .dropdown > li > a:hover{
   background: #9b59b6;
+
 }
 
 .nav > li > a{
-  color: #ffffff;
+  color: #fff ;
 
 }
 .navbar{
@@ -60,7 +67,8 @@
 }
 
 .navbar span{
-  background:#ededed;
+  background: #9b59b6;
+  color: #9b59b6;
 }
 
 .navbar a{
@@ -68,31 +76,29 @@
 }
 
 /*------------------------------------------------------------------
-                        DEFAULT STYLES
+                        default styles
 -------------------------------------------------------------------*/
 html {
   height: 100%;
 }
 
-body { min-height: 100%;
+body {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-
- }
-
+}
 .content {
   flex: 1;
 }
 
 body{
   font-family: 'Lato', sans-serif;
-  background:#fff;
   overflow-x: hidden;
 }
 
 
 body {
- background-color:#eee;
+ background-color:#ffffff;
 }
 
 section{
@@ -136,6 +142,18 @@ a, a:hover{
 a:hover{
    transition:background-color,color .3s ease-in-out;
 }
+
+/*----------------------轮番头按钮设置-------------------------------*/
+.btn.btn-lg.btn-danger{
+  background-color: #673AB7;
+  border: #ffffff;
+}
+.btn.btn-lg.btn-danger:hover{
+  background: #9b59b6;
+}
+/*-----------------------end--------------------------------------*/
+
+
 
 /*------------------------------------------------------------------
                         HEADER STYLES
@@ -391,3 +409,13 @@ section {
 }
 }
 /*----------------end-----------------*/
+
+
+.index-words {
+  font-family: "Lucida Sans Unicode", "Microsoft Yahei", 微软雅黑;
+  margin-top: 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color:#F4511E;
+
+}

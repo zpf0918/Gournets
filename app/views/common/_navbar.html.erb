@@ -24,12 +24,14 @@
                       Hello！, <%= current_user.name %>
                    <b class="caret"></b>
                    </a>
-               <ul class="dropdown-menu">
+               <ul class="dropdown-menu aria-labelledby="dropdownMenuDivider"">
                  <% if current_user.admin? %>
                  <li> <%= link_to("admin", admin_jobs_path)%></li>
+								  <li role="separator" class="divider"></li>
                  <% end %>
                  <li> <%= link_to("My jobs", account_jobs_path)%></li>
-								 <li> <%= link_to(' My favorites', favorites_path) %> </li>
+								 <li> <%= link_to('My favorites', favorites_path) %> </li>
+								  <li role="separator" class="divider"></li>
                  <li> <%= link_to("log out", destroy_user_session_path, method: :delete) %> </li>
               </ul>
              </li>
