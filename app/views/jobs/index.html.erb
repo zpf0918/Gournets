@@ -10,7 +10,7 @@
  <div class="center hero-unit" style="background: url('http://ww3.sinaimg.cn/large/006tNbRwgy1fev6acoih7j31hc0xqwu3.jpg');background-repeat:no-repeat;">
    <div class="container index-words">
 
-    <h2 class="text-center">Welcome to the Gournet</h2>
+    <h2 class="text-center" style = "color:#673AB7" >Welcome to the Gournet</h2>
 
     <br><br>
 
@@ -28,9 +28,9 @@
                 sort <span class="caret"></span>
               </a>
            <ul class="dropdown-menu">
-             <li role="presentation"><%= link_to("更新时间排序", jobs_path(:order => "created_at")) %></li>
-             <li role="presentation"><%= link_to("薪资上限排序", jobs_path(:order => "by_upper_bound")) %></li>
-             <li role="presentation"><%= link_to("薪资下限排序", jobs_path(:order => "by_lower_bound")) %></li>
+             <li role="presentation"><%= link_to("order by created_at", jobs_path(:order => "created_at")) %></li>
+             <li role="presentation"><%= link_to("order by wage_upper_bound", jobs_path(:order => "by_upper_bound")) %></li>
+             <li role="presentation"><%= link_to("order by wage_lower_bound", jobs_path(:order => "by_lower_bound")) %></li>
            </ul>
          </li>
       </ul>
