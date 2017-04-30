@@ -465,6 +465,11 @@ section {
   background: #9b59b6;
 }
 
+.btn.btn-danger.btn-sm.disabled{
+  background: #9b59b6;
+  border-color: #ffffff;
+}
+
 /*--------------单个工作展示页面------------*/
 job-info-box{
   color: #333;
