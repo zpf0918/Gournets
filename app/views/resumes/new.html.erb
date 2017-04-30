@@ -13,7 +13,7 @@
   <% end %>
 </div> -->
 <div class="col-md-12 job-content">
-  <h3> Send Resume</h3>
+  <h3> Send your resume</h3>
   <hr>
   <div class="col-md-4 col-md-offset-4">
     <%= simple_form_for [@job,@resume] do |f| %>
@@ -22,7 +22,7 @@
         <%= f.input :attachment%>
       </div>
       <div class="form-actions text-center">
-        <%= f.submit "Submit", disable_with: "Submiting...", class: "btn btn-primary"%>
+        <%= f.submit "Submit", disable_with: "Submiting...", class: "btn btn-primary btn1"%>
       </div>
     <% end %>
   </div>
