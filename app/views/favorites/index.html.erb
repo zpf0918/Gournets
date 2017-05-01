@@ -1,3 +1,4 @@
+<% if @jobs.length > 0 %>
 <div class="container-fluid">
   <div class="col-md-12 col-md-offset-1 col-lg-8 col-lg-offset-2 job-show-1" style="border-top-right-radius:30px;border-top-left-radius:30px;  border-bottom-right-radius:30px;
               border-bottom-left-radius:60px;">
@@ -56,7 +57,9 @@
       </div>
       <hr/>
       <% end %>
-
+ <%else%>
+ <h3 class="no-data">Oh, you don't have a collection work.</h3>
+ <% end %>
     </div>
   </div>
 </div>
