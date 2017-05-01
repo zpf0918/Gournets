@@ -562,3 +562,81 @@ job-info-box{
   min-height: 560px;
   box-shadow: 1px 1px 1px 1px rgba(155, 89, 182, 0.9) inset
 }
+/*---------------end------------------*/
+
+/*--------------管理员新增工作页面---------*/
+.job-setup{
+   background: #fafafa;
+   margin-top: 50px;
+   margin-bottom: 100px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   box-shadow: 1px 1px 1px #673AB7;
+   border: 1px solid #673AB7;
+   border-radius: 10px;
+
+   opacity:0.95;
+   filter:alpha(opacity=95);
+   hr {
+     height:1px;
+     background-color:#ccc;
+   }
+ }
+
+ .job-form-content{
+   h2{
+     text-align: center;
+     color: #673AB7;
+     letter-spacing: 1px;
+   }
+
+   .job-content-info{
+     height: 80px;
+   }
+
+   .category{
+     width: 75%;
+   }
+
+   .city{
+     width: 75%;
+   }
+
+   .wage{
+     width: 50px;
+     border-radius: 5px;
+   }
+
+   .wage-form{
+     font-weight: 600;
+     font-size: 16px;
+     color: #666;
+   }
+
+   .hidden-box{
+     font-size: 16px;
+   }
+
+
+   .form-actions{
+     text-align: center;
+     margin-top: 50px;
+     margin-bottom: 25px;
+
+     .button{
+       color: #fff;
+       background-color: #9b59b6;
+       border-color: #9b59b6;
+       font-size: 16px;
+       letter-spacing: 0px;
+       width: 20%;
+     }
+     .button:hover{
+         background-color: #4A99B5;
+         border-color: #4A99B5;
+         color: #fff;
+     }
+   }
+
+
+ }
