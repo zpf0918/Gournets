@@ -34,13 +34,13 @@
     border: 0;
     margin-bottom: 0;
     min-height: 70px;
-    background-color: #9b59b6;
+    background-color: #ffffff;
 
 }
 
 //dropdown font color
 .dropdown-menu > li > a{
-  color: #bdc3c7;
+  color: #131418;
 }
 //end
 
@@ -85,7 +85,8 @@
 
 .navbar-brand{
    color: #ffffff;
-   font-weight: 700px;
+   font-weight: 1000px;
+   font-size: 20px;
 
 }
 
@@ -643,7 +644,7 @@ job-info-box{
 
  /*-------------------管理员工作展示页面-------------*/
  .nav.nav-pills.nav-stacked > li.active > a{
-   background: #673AB7;
+   background: rgba(103, 58, 183, 0.9);
    font-size: 18px;
 
 
