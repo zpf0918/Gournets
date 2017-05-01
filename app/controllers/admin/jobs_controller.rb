@@ -3,7 +3,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
 before_action :require_is_admin
 layout "admin"
 def index
- @jobs = current_user.jobs.recent.paginate(:page => params[:page], :per_page => 5)
+ @jobs = current_user.jobs.recent.paginate(:page => params[:page], :per_page => 10)
 
 end
 
