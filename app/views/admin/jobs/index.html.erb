@@ -3,7 +3,7 @@
 </div> -->
 
 <br><br>
-
+<% if @jobs.length > 0 %>
 <table class="table table-boldered table-striped custab" >
 
     <thead>
@@ -61,6 +61,9 @@
     </tr>
     <% end %>
 </table>
+<% else %>
+ <h3 class="no-data">You don't have a release position.</h3>
+ <% end %>
 
 <div class="text-center">
      <%= will_paginate @jobs, renderer: BootstrapPagination::Rails %>
