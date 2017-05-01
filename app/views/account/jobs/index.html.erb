@@ -1,26 +1,62 @@
-<div class="col-md-12">
+<div class="container-fluid">
+  <div class="col-md-12 col-md-offset-1 col-lg-8 col-lg-offset-2 job-show-1" style="border-top-right-radius:30px;border-top-left-radius:30px;  border-bottom-right-radius:30px;
+              border-bottom-left-radius:60px;">
+    <div class="col-md-12 col-md-offset-4 page-title">
+      <h2><span class="fa fa-envelope-o"></span>  My jobs</h2>
+    </div>
+    <div class="col-md-12">
+      <div class="col-md-12 col-md-offset-10">
+        <%= link_to('<span class="glyphicon glyphicon-arrow-left"></span> Back'.html_safe,jobs_path ) %>
+      </div>
 
-  <h2 class="text-center"> 我投递的工作 </h2>
+    <% @jobs.each do |job| %>
+      <div class="row">
+        <div class="col-md-6">
+          <span style="font-size:1.3em">
+            <%= link_to(job.title, job_path(job)) %></span>
+        </div>
+      </div>
 
-  <table class="table">
-    <thead>
-      <tr>
-        <th> # </th>
-        <th> 职位名称 </th>
-        <th> 职位描述 </th>
+      <div class="row" style="margin-top:10px;">
+        <div class="col-md-3">
+          <span style="font-size:1em;">
+            <i class="fa fa-handshake-o"></i>
+            company：<%= job.company %>
+          </span>
+        </div>
 
-      </tr>
-    </thead>
+        <div class="col-md-3">
+          <span class="badge badge-info">
+            salary：
+            <span style="font-size:1em;" class="fa fa-rmb"></span><%= job.wage_lower_bound %>
+            -
+            <%= job.wage_upper_bound %>
+            RMB
+          </span>
+        </div>
 
-    <tbody>
-      <% @jobs.each do |job| %>
-        <tr>
-          <td> # </td>
-          <td> <%= link_to(job.title, job_path(job)) %> </td>
-          <td> <%= job.description %> </td>
+        <div class="col-md-3">
+          <span style="font-size:1em;">
+           <i class="fa fa-envelope-open-o"></i>
+            contact_email：<%= job.contact_email %></span>
+        </div>
+      </div>
 
-        </tr>
+       <div class="row" style="margin-top:5px;">
+        <div class="col-md-3">
+          <span style="font-size:1em;">
+            <i class="fa fa-location-arrow" aria-hidden="true" style="color: black;"></i>
+            city：<%= job.city %></span>
+        </div>
+        <div class="col-md-3">
+          <span style="font-size:1em;">
+            <i class="fa fa-clock-o" aria-hidden="true"></i><%= time_ago_in_words(job.created_at) %>
+             ago</span>
+        </div>
+      </div>
+      <hr/>
       <% end %>
-    </tbody>
-  </table>
+
+    </div>
+  </div>
 </div>
