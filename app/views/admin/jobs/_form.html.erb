@@ -11,8 +11,8 @@
       <%= f.input :category, :collection => ["steak", "wine taster", "pastry cook", "tea art"] %>
       <%= f.input :city,  :collection => ["Beijing", "Shanghai", "Shenzhen", "Guangzhou"] %>
       <%= f.input :wage_lower_bound, :label => 'salary' do %>
-         <%= f.input_field :wage_lower_bound, :as => :string, class: "wage" %> <span class="wage-form">k ~</span>
-         <%= f.input_field :wage_upper_bound, :as => :string, class: "wage" %> <span class="wage-form">k</span>
+         <%= f.input_field :wage_lower_bound, :as => :string, class: "wage" %> <span class="wage-form">~</span>
+         <%= f.input_field :wage_upper_bound, :as => :string, class: "wage" %> <span class="wage-form"></span>
       <% end %>
       <%= f.input :contact_email %>
       <hr />
