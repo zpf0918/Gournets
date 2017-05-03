@@ -7,6 +7,12 @@
         <% else %>
           <%= link_to("Deliver", new_job_resume_path(job), class: "btn btn-info btn-sm", method: :get) %>
         <% end%>
+        <%else%>
+        <% if current_user && current_user.has_applied?(job) %>
+          <%= link_to("Delivered", new_job_resume_path(job), class: "btn btn-info btn-sm disabled", method: :get) %>
+        <% else %>
+          <%= link_to("Deliver", new_job_resume_path(job), class: "btn btn-info btn-sm", method: :get) %>
+        <% end%>
     <% end %>
     </div>
 
