@@ -32,8 +32,8 @@
                 <li><%= link_to('<span class="glyphicon glyphicon-edit"></span> Admin'.html_safe, admin_jobs_path) %></li>
 								  <li role="separator" class="divider"></li>
                  <% end %>
-								  <li><%= link_to('<span class="glyphicon glyphicon-check"></span>  My jobs'.html_safe, account_jobs_path) %></li>
-								 <li> <%= link_to('<span class="glyphicon glyphicon-floppy-saved"></span>  My favorites'.html_safe, favorites_path) %> </li>
+								  <li><%= link_to('<span class="fa fa-envelope-o"></span>  My jobs'.html_safe, account_jobs_path) %></li>
+								 <li> <%= link_to('<span class="fa fa-star"></span>  My favorites'.html_safe, favorites_path) %> </li>
 								  <li role="separator" class="divider"></li>
 									 <li><%= link_to('<span class="glyphicon glyphicon-log-out"></span>  Log out'.html_safe,destroy_user_session_path, method: :delete) %></li>
               </ul>
