@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
 
-
-</head>
-
-<body>
 
  <div class="center hero-unit" style="background: url('http://ww3.sinaimg.cn/large/006tNbRwgy1fev6acoih7j31hc0xqwu3.jpg');background-repeat:no-repeat;">
    <div class="container index-words">
@@ -62,7 +55,7 @@
           </span>
        </div>
        <div class="col-md-3">
-         <span style="font-size:1em;"><i class="fa fa-envelope-open-o"></i> contact_email：<%= job.contact_email %></span>
+         <span style="font-size:1em;"><i class="fa fa-envelope-open-o"></i> contact_email： <%= job.contact_email %></span>
        </div>
       </div>
 
@@ -72,7 +65,7 @@
           <span style="font-size:1em;"><i class="fa fa-location-arrow" aria-hidden="true" style="color: black;"></i> city：<%= job.city %></span>
         </div>
         <div class="col-md-3">
-          <span style="font-size:1em;"><i class="fa fa-clock-o" aria-hidden="true"></i><%= time_ago_in_words(job.created_at) %> ago</span>
+          <span style="font-size:1em;"><i class="fa fa-clock-o" aria-hidden="true"></i> <%= time_ago_in_words(job.created_at) %> ago</span>
         </div>
       </div>
       <hr>
@@ -88,6 +81,3 @@
 <div class="text-center">
   <%= will_paginate @jobs,renderer: BootstrapPagination::Rails %>
 </div>
-
-</body>
-</html>
