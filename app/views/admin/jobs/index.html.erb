@@ -44,11 +44,11 @@
            <span class="fa fa-pencil"></span>
            <% end %>
            <% if job.is_hidden %>
-             <%= link_to publish_admin_job_path(job), :method => :post, :class => "btn btn-xs btn-success" do %>
+             <%= link_to admin_job_path(job, status: "publish"), :method => :patch, :class => "btn btn-xs btn-success" do %>
              <span class="fa fa-eye"></span>
              <% end %>
            <% else %>
-             <%= link_to hide_admin_job_path(job), :method => :post,  :class => "btn btn-xs btn-warning" do %>
+             <%= link_to admin_job_path(job, status: "hide"), :method => :patch,  :class => "btn btn-xs btn-warning" do %>
              <span class="fa fa-eye-slash"></span>
             <% end %>
            <% end %>

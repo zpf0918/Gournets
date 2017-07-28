@@ -30,14 +30,6 @@ def edit
   @job = Job.find(params[:id])
 end
 
-def update
-  @job = Job.find(params[:id])
-  if @job.update(job_params)
-    redirect_to admin_jobs_path
-  else
-    render :edit
-  end
-end
 
 def destroy
   @job = Job.find(params[:id])
@@ -45,16 +37,27 @@ def destroy
   redirect_to admin_jobs_path
 end
 
-def publish
-  @job = Job.find(params[:id])
-  @job.publish!
-  redirect_to :back
-end
 
-def hide
+def update
   @job = Job.find(params[:id])
-  @job.hide!
-  redirect_to :back
+  status = params[:status].nil? ? "update" : params[:status]
+
+  success =
+    case status
+    when "update"
+      @job.update(job_params)
+    when "publish"
+      @job.publish!
+    when "hide"
+      @job.hide!
+    end
+
+    if success
+      flash[:notice] = "更新成功。"
+      redirect_to admin_jobs_path
+    else
+      render :edit
+    end
 end
 
 private
