@@ -2,8 +2,6 @@ class JobsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy, :favorite]
   before_action :validate_search_key, only: [:search]
 
-
-
   def index
     @jobs = case params[:order]
           when 'by_lower_bound'
@@ -17,7 +15,6 @@ class JobsController < ApplicationController
 
   def show
     @job = Job.find(params[:id])
-
     if @job.is_hidden
       flash[:warning] = "该工作已被隐藏"
       redirect_to root_path
